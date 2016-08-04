@@ -1474,9 +1474,8 @@ void MakePlot::TabulateNCEvents()
 			}
 			if(fm->EMpdgf[j] == 22 && abs(a)<cutAngle){
 				hasShallowG = 1;
-				//float l = r.Exp(18);
-				//if (l >=1 && l<=5 ) GdecR = 1;
-				GdecR = 1;	
+				float l = r.Exp(18);
+				if (l >=1 && l<=5 ) GdecR = 1;	
 				for (int k=0; k<fm->nf; k++) {
             				if (fm->pf[k]<=0 || (fm->pdgf[k] != 211 && fm->pdgf[k] != -211)) continue;
             				if(!rot) ap = asin(fm->pxf[k]/fm->pf[k])/3.14159*180;
