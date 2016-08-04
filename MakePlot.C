@@ -1290,7 +1290,7 @@ void MakePlot::PlotEvents_vs_El_lh(const char* saveAs)
     TCut lhbad(Form("l_angle<%f&&h_min_angle<%f",cutAngle,cutAngle));
     
     cout<<endl<<"----------------------------------------------------------------------------"<<endl;
-    cout<<"Lepton cut"<<endl;
+    cout<<"Lepton and Hadron cut"<<endl;
     cout<<"Is rotated: "<<rot<<endl;
     cout<<"Angle cut: "<<cutAngle<<endl;
     cout<<"QE"<<endl;
